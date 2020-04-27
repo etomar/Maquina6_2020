@@ -99,7 +99,7 @@ public class MaquinaBebidas {
                 
             case 'R':
                 
-                contador.retornar();
+                contador.Retornar();
                 
                 break;
                 

@@ -49,6 +49,15 @@ public class ContadorDeMonedas {
         /* no se ha realizado la venta */ /* Entradas: Ninguna */
         /* Salidas: float, la cantidad devuelta */ 
 }
+        
+        public float Retornar () {
+            
+            float valor = cantidad;
+            cantidad = 0;
+                    
+            return valor;
+            
+        }
 	
 
 }
