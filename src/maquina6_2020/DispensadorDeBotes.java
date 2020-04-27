@@ -12,9 +12,7 @@ package maquina6_2020;
 public class DispensadorDeBotes {
     private int botes; 
 
-public DispensadorDeBotes(int B) {
-     iniciarDispensadorDeBotes(B);
- }
+
  
 public void iniciarDispensadorDeBotes (int i) {
     botes = i;
@@ -26,8 +24,7 @@ public boolean pulsarBoton () {
            totalBotes= true;
            botes--;
         }
-        else
-            totalBotes = false;
+     
         return totalBotes;
     }
 

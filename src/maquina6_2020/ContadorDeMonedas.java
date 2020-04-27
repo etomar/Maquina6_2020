@@ -14,12 +14,7 @@ public class ContadorDeMonedas {
         /* Entradas: float i, saldo inicialmente disponible para cambios */ 
         /* Salidas: Ninguna*/ 
 	
-	public void iniciarContadorDeMonedas 
-        /* Informa sobre el saldo actual del cliente */
-                /* Entradas: Ninguna */ 
-                /* Salidas: float, el saldo del cliente */ 
-        
-        (float i) {
+	public void iniciarContadorDeMonedas (float i) {
 	disponible=i;
 	}
 	
@@ -31,7 +26,7 @@ public class ContadorDeMonedas {
         /* Entrada: float m, la cantidad de dinero introducida */
         /* Salidas: Ninguna */
 	public void insertarMoneda (float m) {
-		cantidad+=m;
+		this.cantidad+=m;
 	}
 	/* Devuelve el cambio, si es posible */ 
         /* Una vez entregado el cambio, el dinero introducido por el cliente */

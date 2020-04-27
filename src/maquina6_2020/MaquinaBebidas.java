@@ -17,6 +17,12 @@ public class MaquinaBebidas {
     private float precio;
     public void iniciarMaquinaDeBebidas (float m, int b, float pvp) {
         
+        contador = new ContadorDeMonedas();
+        cola = new DispensadorDeBotes();
+        limon = new DispensadorDeBotes();
+        naranja = new DispensadorDeBotes();
+        tonica = new DispensadorDeBotes();
+        agua = new DispensadorDeBotes();
         contador.iniciarContadorDeMonedas(m);
         cola.iniciarDispensadorDeBotes(b);
         limon.iniciarDispensadorDeBotes(b);
@@ -32,16 +38,12 @@ public class MaquinaBebidas {
         
         switch (o) {
             
-            case '1': 
-            case '2': 
-            case '3':
-            case '4':
-            case '5':
+            case '1': case '2':  case '3': case '4': case '5':
             ordenSeleccion(o);
                 
             break;
             
-            case 'A': case 'B' : case 'C' : case 'D' : case 'R' :
+            case 'A':  case 'a': case 'B' :  case 'b': case 'C' :  case 'c': case 'D':  case 'd': case 'E':  case 'e': case 'R' :  case 'r':
             ordenMonedas(o);
             break;
             
@@ -68,36 +70,36 @@ public class MaquinaBebidas {
         
         switch (o) {
             
-            case 'A' :
+            case 'A' : case 'a': 
                 
                 contador.insertarMoneda(0.05F);
             
             break;
            
-            case 'B' :
+            case 'B' :  case 'b':
                 contador.insertarMoneda(0.10F);
                 
              break;
              
-            case 'C':
+            case 'C':  case 'c':
                 contador.insertarMoneda(0.20F);
                 
                 break;
                 
                 
-            case 'D':
+            case 'D':  case 'd':
                 
                 contador.insertarMoneda(0.50F);
                 
                 break;
                 
-            case 'E': 
+            case 'E':  case 'e':
                 
-                contador.insertarMoneda(1F);
+                contador.insertarMoneda(1.00F);
                 
                 break;
                 
-            case 'R':
+            case 'R':  case 'r':
                 
                 contador.Retornar();
                 
